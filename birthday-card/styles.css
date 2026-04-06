@@ -1,5 +1,5 @@
 body{
-    background-color: rgb(129, 52, 52);
+    background-color: rgb(140, 99, 99);
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
@@ -97,5 +97,9 @@ section:hover{
     transform: scale(1.02);
     background-color: cadetblue;
     color: aliceblue;
+}
+
+section:hover p{
+    color: red;
 }
 
