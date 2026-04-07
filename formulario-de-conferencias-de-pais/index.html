@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Document</title>
+</head>
+<body>
+    <main class="container">
+        <h1 class="title center">Formulário do professor para conferência dos pais</h1>
+        <p class="descricao center">Por favor preencha esse documento completamente e submeta o para podermos alinhar como as reuniões serão conduzidas</p>
+        <form action="">
+            <fieldset>
+                <legend>Informações de estudante</legend>
+                <label for="nome-estudante">Nome completo de Estudante:</label>
+                <input type="text" id="nome-estudante" name="nome-estudante" required placeholder="Ex: Gildo Virgilio Cumbane">
+
+                <label for="notas">Nota de Estudante:</label>
+                <input type="number" id="notas" required placeholder="Ex: 10">
+            </fieldset>
+            <fieldset>
+                <legend>Informações de encarregado de Educação:</legend>
+                <label for="nome-encarregado">Nome completo de encarregado de Educação:</label>
+                <input type="text" id="nome-encarregado" name="nome-encarregado" placeholder="Ex: Virgilio Fabião Cumbane" required>
+            </fieldset>
+            <fieldset>
+                <legend>Contacto de preferência</legend>
+                <label for="email" class="metodo-de-contacto" value>Email:</label>
+                <input class="metodo-de-contacto-btn" type="radio" id="email" name="contacto" value="phone" checked>
+                <label for="phone" class="metodo-de-contacto">Contacto de Celular: </label>
+                <input class="metodo-de-contacto-btn" type="radio" name="contacto" id="phone" value="phone">
+            </fieldset>
+            <fieldset>
+                <legend>Notas adicionais</legend>
+                <label for="notas">Escreva neste campo qualquer assunto que julgue relevante.</label>
+                <textarea name="notas" id="notas" cols="50" rows="4"></textarea>
+            </fieldset>
+            <button class="submit-btn">Submeter o Formulário</button>
+        </form>
+    </main>
+</body>
+</html>

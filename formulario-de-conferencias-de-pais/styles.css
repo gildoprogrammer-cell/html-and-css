@@ -1,0 +1,102 @@
+body{
+    background-color: aliceblue;
+    color: rgb(63, 7, 7);
+}
+
+.container{
+    width: 80%;
+    max-width: 600px;
+    background-color: #158a9f1a;
+    border-radius: 10px;
+    box-shadow: 0 5px 5px rgb(148, 166, 213);
+    margin: 30px auto;
+    padding: 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.center{
+    text-align: center;
+}
+
+.descricao{
+    font-size: 1.1rem;
+    line-height: 1.5em;
+}
+
+fieldset{
+    border: 1px grey solid;
+    border-radius: 5px;
+    padding: 20px;
+    margin: 20px 0px;
+}
+
+fieldset legend{
+    font-weight: 600;
+    font-size: 1.3rem;
+}
+
+label{
+    font-size: 1.1rem;
+}
+
+label:not(.metodo-de-contacto){
+    display: block;
+    margin-bottom: 5px;
+}
+
+input:not(.metodo-de-contacto-btn){
+    width: 96%;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+
+input::placeholder{
+    color: rgb(20, 64, 207);
+    font-weight: 400;
+}
+
+textarea{
+    border-radius: 6px;
+    
+}
+
+input, textarea{
+    color: rgb(92, 28, 73);
+    font-weight: 600;
+}
+
+.metodo-de-contacto-btn{
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 1px solid rgb(19, 5, 32);
+    vertical-align: bottom;
+}
+
+.metodo-de-contacto-btn::before{
+    display: block;
+    content: " ";
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    transform: translate(3px, 3px) scale(0);
+    transition: all 0.3s ease-in;
+}
+
+.metodo-de-contacto-btn:checked:before{
+     transform: translate(4px, 4px) scale(1);
+     background-color: rgb(7, 98, 98);
+}
+
+.submit-btn{
+    padding: 9px;
+    border-radius: 5px;
+    border: 1px gray solid;
+    font-size: 1.1rem;
+    display: block;
+    margin: 0 auto;
+}
+
