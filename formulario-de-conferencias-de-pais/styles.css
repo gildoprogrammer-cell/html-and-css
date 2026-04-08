@@ -59,6 +59,7 @@ input::placeholder{
 
 textarea{
     border-radius: 6px;
+    width: 100%;
     
 }
 
@@ -100,3 +101,20 @@ input, textarea{
     margin: 0 auto;
 }
 
+
+@media (max-width: 600px) {
+  fieldset legend {
+    font-size: 16px; 
+  }
+  label{
+    font-size: 16px;
+  }
+
+  h1{
+    font-size: 20px;
+  }
+
+  .descricao{
+    font-size: 14px;
+  }
+}
