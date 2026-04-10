@@ -1,0 +1,29 @@
+body{
+    background-color: rgb(163, 163, 213);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+main{
+    width: 700px;
+    margin: 20px auto;
+    background-color: rgb(25, 206, 238);
+    padding: 20px;
+}
+
+input:not(.availability){
+    display: block;
+    width: 99%;
+     margin-bottom: 10px;
+}
+
+textarea{
+    width: 99%;
+}
+
+fieldset{
+    margin: opx;
+}
+
+.position{
+    margin: 10px auto;
+}

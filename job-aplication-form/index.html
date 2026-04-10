@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>job-aplication-form</title>
+</head>
+<body>
+    <main>
+        <h1>Job Job Aplication</h1>
+        <form action="">
+            <label for="name" class="name">Full Name:</label>
+            <input type="text" id="name" class="name" placeholder="Enter Your Name" required>
+            <label for="email" class="email" id="email">Email:</label>
+            <input type="email" class="email" placeholder="Enter Your Email" required>
+            <label for="text" class="position" id="position">Position:</label>
+            <select name="position" id="position" class="position">
+                <option value="" disabled hidden selected>Choice Your Position</option>
+                <option value="1">Programmer</option>
+                <option value="2">Design Web</option>
+                <option value="3">Data Base Administrator</option>
+                <option value="4">Data Base Analist</option>
+            </select>
+            <fieldset>
+                <legend>Availability</legend>
+                <input type="radio" id="availability" class="availability" name="availability" checked>
+                <label for="availability" class="availability" id="availability">Full-Time</label>
+                <input type="radio" id="availability" class="availability" name="availability">
+                <label for="availability" class="availability" id="availability">Part-Time</label>
+            </fieldset>
+            <label for="notes">Additional Information</label>
+            <textarea name="notes" id="notes" cols="50" rows="5" placeholder="Plese write here your additional information"></textarea>
+            <button type="submit">Submite the form</button>
+        </form>
+    </main>
+</body>
+</html>
