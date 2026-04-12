@@ -32,6 +32,16 @@ input:not(.availability){
     border-radius: 5px;
     border: none;
     padding-left: 10px;
+    color: rgb(55, 31, 2);
+    font-size: 1.1rem;
+}
+
+input:invalid, textarea:invalid{
+    color: red;
+}
+
+input:valid, textarea:valid{
+    color: rgb(12, 15, 193);
 }
 
 fieldset{
