@@ -47,7 +47,7 @@
                 <input type="phone" id="phone" class="phone" placeholder="Ex: +258849287159">
                 <br>
                 <label for="banc">Conta Bancária</label>
-                <input type="number" name="numero_conta" placeholder="Número da conta" required >
+                <input type="text" maxlength="13" oninput="this.value = this.value.replace(/\D/g, '')" name="numero_conta" placeholder="Número da conta" required>
             </fieldset>
             <fieldset>
                 <legend>Mais Informações</legend>
