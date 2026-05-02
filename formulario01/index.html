@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formulario</title>
+</head>
+<body>
+    <h1 class="title">Formulário de registo</h1>
+    <p>Preencha esse formulário com a informação requerida</p>
+    <form action="link.com" method="post">
+        <fieldset>
+            <label for="apelido">Insira seu apelido: 
+                <input type="text" id="apelido" name="name" required>
+            </label>
+            <label for="nome-inicial">Insira seu primeiro nome: 
+                <input type="text" name="nome-inicial" id="nome-inicial" required>
+            </label>
+            <label for="email"> Insira seu email: 
+                <input type="email" name="email" id="email" required>
+            </label>
+            <label for="password"> Insira uma nova palavra passe: 
+                <input type="password" name="password" id="password" pattern="[a-zA-Z0-9]{8,}" required>
+            </label>
+        </fieldset>
+        <fieldset>
+           <p>Selecione a conta da sua preferencia</p> 
+           <label for="pessoal"> Conta Pessal: 
+            <input type="radio" name="conta-preferida" id="pessoal" checked>
+           </label>
+           <label for="comercial">Conta Comercial:
+            <input type="radio" name="conta-preferida" id="comercial">
+           </label>
+        </fieldset>
+        <fieldset>
+            <label for="foto">Carrega uma foto de perfil: 
+                <input type="file" id="foto" name="foto" required>
+            </label>
+            <label for="idade"> Insira sua idade (anos):
+                <input type="number" name="idade" id="idade" min="13" max="110" required>
+            </label>
+            <label for="referrenciador"> Como ouviu falar de nós?
+                <select name="referrenciador" id="referrenciador" required>
+                    <option value="" disabled selected>Escolha uma opção</option>
+                    <option value="1">Televisão</option>
+                    <option value="2">Radio</option>
+                    <option value="3">Redes Sociais</option>
+                    <option value="4">Com amigos</option>
+                    <option value="5">Outros locias</option>
+                </select>
+            </label>
+            <label for="biografia">Deixa uma biografia:
+                <textarea name="biografia" id="biografia" rows="3" cols="40" placeholder="Insira sua biografia nesta área..."></textarea>
+            </label>
+            <a href="algum.com">Lea sobre nossos termos e condições</a>
+            <input type="checkbox" id="termos" name="termos" required>
+            <label for="termos"> Aceito os termos e condições
+            </label>
+        </fieldset>
+        <input type="submit" value="Submeter o formulário">
+    </form>
+</body>
+</html>
