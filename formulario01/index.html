@@ -4,10 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>formulario</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <h1 class="title">Formulário de registo</h1>
-    <p>Preencha esse formulário com a informação requerida</p>
+    <p class="info">Preencha esse formulário com a informação requerida</p>
     <form action="link.com" method="post">
         <fieldset>
             <label for="apelido">Insira seu apelido: 
@@ -24,12 +25,13 @@
             </label>
         </fieldset>
         <fieldset>
-           <p>Selecione a conta da sua preferencia</p> 
-           <label for="pessoal"> Conta Pessal: 
-            <input type="radio" name="conta-preferida" id="pessoal" checked>
+           <p class="message-account">Selecione a conta da sua preferencia</p> 
+           <input type="radio" name="conta-preferida" id="pessoal" checked>
+           <label for="pessoal"> Conta Pessal
            </label>
-           <label for="comercial">Conta Comercial:
-            <input type="radio" name="conta-preferida" id="comercial">
+           <br>
+            <input type="radio" name="conta-preferida" id="comercial" >
+           <label for="comercial">Conta Comercial
            </label>
         </fieldset>
         <fieldset>
@@ -41,20 +43,21 @@
             </label>
             <label for="referrenciador"> Como ouviu falar de nós?
                 <select name="referrenciador" id="referrenciador" required>
-                    <option value="" disabled selected>Escolha uma opção</option>
+                    <option value="" disabled selected hidden>Escolha uma opção</option>
                     <option value="1">Televisão</option>
                     <option value="2">Radio</option>
                     <option value="3">Redes Sociais</option>
                     <option value="4">Com amigos</option>
-                    <option value="5">Outros locias</option>
+                    <option value="5">Outras fontes</option>
                 </select>
             </label>
             <label for="biografia">Deixa uma biografia:
-                <textarea name="biografia" id="biografia" rows="3" cols="40" placeholder="Insira sua biografia nesta área..."></textarea>
+                <textarea class="inline" name="biografia" id="biografia" rows="4" cols="30" placeholder="Insira sua biografia nesta área..."></textarea>
             </label>
             <a href="algum.com">Lea sobre nossos termos e condições</a>
-            <input type="checkbox" id="termos" name="termos" required>
-            <label for="termos"> Aceito os termos e condições
+            <label for="termos"> 
+                  <input type="checkbox" id="termos" class="myclass">  
+                Aceito os termos e condições
             </label>
         </fieldset>
         <input type="submit" value="Submeter o formulário">

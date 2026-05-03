@@ -1,0 +1,81 @@
+body{
+    background-color: #120436;
+    color: rgb(221, 233, 245);
+    font-size: 16px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    width: 100%;
+}
+
+h1, .info{
+    text-align: center;
+}
+
+form{
+    max-width: 500px;
+    min-width: 300px;
+    width: 60vw;
+    margin: 0 auto;
+    margin-bottom: 3em;
+
+}
+
+fieldset{
+    border: none;
+    border-bottom: #3804ba 2px solid;
+    padding:1em 0%;
+}
+
+fieldset:last-of-type{
+    border: unset;
+}
+
+input:not([type="radio"]):not([type="checkbox"]):not([type="submit"]){
+    width: 100%;
+    margin: 0.3rem 0px;
+    box-sizing: border-box;
+    background-color: #060115;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    color: aliceblue;
+    font-size: 16px;
+}
+
+.message-account{
+    margin-top: 0%;
+}
+
+select, textarea{
+    margin: 0.5em 0px 1em;
+    padding: 10px;
+    width: 100%;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+
+.inline{
+    display: inline;
+}
+
+input[type="radio"]{
+    margin-bottom: 1em;
+}
+
+a{
+    display: block;
+    color: aliceblue;
+    margin-bottom:10px ;
+}
+
+input[type="submit"]{
+    display: block;
+    width: 50%;
+    margin: auto;
+    padding: 10px;
+    font-size: 15px;
+    color: aliceblue;
+    background-color: #42288b;
+    border: rgb(44, 42, 94) 1px solid;
+    border-radius: 6px;
+}
