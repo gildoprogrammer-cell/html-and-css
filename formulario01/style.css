@@ -78,4 +78,11 @@ input[type="submit"]{
     background-color: #42288b;
     border: rgb(44, 42, 94) 1px solid;
     border-radius: 6px;
+    font-weight: bold;
+}
+
+input[type="submit"]:hover{
+    background-color: #120436;
+    cursor: pointer;
+    color: blue;
 }
