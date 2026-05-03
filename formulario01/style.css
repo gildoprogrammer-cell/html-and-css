@@ -79,10 +79,21 @@ input[type="submit"]{
     border: rgb(44, 42, 94) 1px solid;
     border-radius: 6px;
     font-weight: bold;
+    transition: all 0.6s ease;
 }
 
 input[type="submit"]:hover{
-    background-color: #120436;
     cursor: pointer;
     color: blue;
+    background-color: whitesmoke;
+    transform: scale(0.97);
+}
+
+select{
+    color: #3804ba;
+    font-size: 1.1rem;
+}
+
+input::placeholder, textarea::placeholder{
+    color: #4509fa;
 }
