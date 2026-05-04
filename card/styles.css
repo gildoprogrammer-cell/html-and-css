@@ -1,0 +1,67 @@
+body{
+    background: rgb(226, 220, 220);
+    height: 100vh;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+.card{
+    width: 250px;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 0 2px 5px rgb(23,20, 23, 0.7) ;
+    margin: auto;
+}
+
+h1{
+    text-align: center;
+    font-size: 20px;
+    margin: 4px;
+    color: rgb(69, 7, 7);
+}
+
+label{
+    display: block;
+    margin: 10px;
+}
+
+input[type="checkbox"]{
+    appearance: none;
+    border: 1px solid rgb(178, 132, 132);
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+    margin-right: 10px;
+    background-color: aliceblue;
+    border-radius: 4px;
+}
+
+input[type="checkbox"]:checked{
+    background-color: rgb(12, 12, 255);
+}
+
+input[type="checkbox"]:checked::after{
+    content: "✓";
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    display: block;
+    text-align: center;
+}
+
+input[type=submit]{
+    display: block;
+    margin: auto;
+    color: rgb(7, 45, 143);
+    font-weight: bolder;
+    background-color: aliceblue;
+    border-radius: 3px;
+     border: 1px solid rgb(178, 132, 132);
+}
+
+input[type=submit]:hover{
+    background-color: rgb(135, 209, 205);
+    color:blue;
+    transform: scale(1.1);
+    border: blue 1px solid;
+    transition: all 0.3s ease-in;
+}
