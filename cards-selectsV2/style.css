@@ -16,7 +16,6 @@ h1{
 }
 
 form{
-    min-width: 500x;
     margin: auto;
     max-width: 700px;
 }
@@ -37,8 +36,8 @@ form{
 }
 
 .card:hover, input[type="submit"]:hover{
-    transform: scale(1.015);
-    transition: all 0.4s ease-in;
+    transform: scale(1.02);
+   
 }
 
 input[type=submit]{
@@ -56,6 +55,7 @@ input[type=submit]{
     color: rgb(69, 7, 7);
     box-shadow: 0 2px 5px rgba(204, 186, 97, 0.4);
     background: linear-gradient(90deg, rgb(212, 208, 208), rgb(80, 93, 80), rgb(204, 155, 155));
+    transition: all 0.4s ease-in;
 }
 
 input[type=submit]:focus{
@@ -66,6 +66,7 @@ input[type=submit]:focus{
 input[type="submit"]:hover{
     background: linear-gradient(90deg, rgb(100,100,101), rgb(50,27,2), rgb(20,40,30));
     color: white;
+    transform: scale(1.015);
 }
 
 input[type="checkbox"]:hover{
